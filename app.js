@@ -11,7 +11,7 @@ app.use(cors());
 //Routes
 app.use('/',UserRouter);
 
-mongoose.connect('mongodb://localhost:27017/')
+mongoose.connect('mongodb+srv://prasad:1234@cluster0.bujbcmx.mongodb.net/')
 .then(() => app.listen(5000))
 .then(() =>
 console.log("Connected to Database & Listening to localhost 5000")
